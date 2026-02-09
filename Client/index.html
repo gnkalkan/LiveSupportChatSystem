@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canlý Destek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-light">
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm" style="height: 80vh">
+                    <div class="card-header text-bg-primary d-flex justify-content-between align-items-center">
+                        <span class="fw-bold"><i class="fa-solid fa-headset"></i> Canlý Destek</span>
+                        <span class="badge bg-danger" id="connectionStatus">Baðlantý Yok</span>
+                    </div>
+                    <div class="card-body overflow-auto bg-white" id="messageList">
+                        <div class="text-center text-muted small mt-5">Sohbet baþlamaya hazýr...</div>
+                    </div>
+                    <div class="card-footer bg-light">
+                        <div class="mb-2">
+                            <input type="text" id="txtUser" class="form-control form-control-sm" placeholder="Adýnýz (örn: Müþteri)" />
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="txtMessage" class="form-control" placeholder="Mesajýnýzý yazýn..." disabled />
+                            <button class="btn btn-primary" id="btnSend" disabled>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/9.0.6/signalr.min.js" integrity="sha512-kkMt8UThSmWcdXLYFaGZ/U6vyWSNLZMUWQ5SMeF80pGqrEkH5ei9D/3MbVQpB8p7D5C3A4vlX7BpsWTT2BfB6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
